@@ -57,7 +57,7 @@ button {
 
 .nav {
     width: 100%;
-    padding: 14px 24px;
+    padding: 11px 24px;
     height: 54px;
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
@@ -76,7 +76,7 @@ button {
 }
 
 .logo-link {
-    padding: 0 8px 0 24px;
+    padding: 3px 8px 0 24px;
 }
 
 .logo-link__svg {
@@ -86,13 +86,13 @@ button {
 
 .nav__product {
     margin-top: 5px;
-    padding: 3px 16px;
-    border-radius: 10px;
+    padding: 6px 16px;
+    border-radius: 20px;
 }
 
 .nav__product:hover {
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(130, 130, 140, 0.85);
 }
 
 .products {
