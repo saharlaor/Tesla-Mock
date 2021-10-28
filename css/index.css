@@ -1,3 +1,19 @@
+/* Fonts */
+@font-face {
+    font-family: "Gotham Light";
+    src: url(../assets/fonts/GothamSSm-Light_Web.woff2);
+}
+
+@font-face {
+    font-family: "Gotham SSm";
+    src: url(../assets/fonts/GothamSSm-Book_Web.woff2);
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url(../assets/fonts/GothamSSm-Medium_Web.woff2);
+}
+
 /* General */
 * {
     padding: 0px;
@@ -6,6 +22,17 @@
 }
 
 /* Blocks */
+.page {
+    height: 100vh;
+    width: 100vw;
+}
+
+.first-page {
+    background-image: url(../assets/img/M3-Hero-LHD-US-D.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35.5%;
+}
 
 /* Elements */
 
