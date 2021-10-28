@@ -14,6 +14,11 @@
     src: url(../assets/fonts/GothamSSm-Medium_Web.woff2);
 }
 
+/* Utils */
+.clear {
+    clear: both;
+}
+
 /* General */
 * {
     padding: 0px;
@@ -23,7 +28,8 @@
 
 a,
 svg,
-button {
+button,
+h1 {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -65,6 +71,15 @@ button {
     font-weight: 500;
 }
 
+.products {
+    height: 100%;
+    padding-left: 65px;
+}
+
+.title {
+    padding: 24px 0 8px 0;
+}
+
 /* Elements */
 .nav__item {
     display: block;
@@ -96,9 +111,14 @@ button {
     background-color: rgba(130, 130, 140, 0.85);
 }
 
-.products {
-    height: 100%;
-    padding-left: 65px;
+.first-page__header {
+    padding-top: 83px;
+}
+
+.title__text {
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 45px;
 }
 
 /* Modifiers */
@@ -134,6 +154,10 @@ button {
 
 .products--center {
     display: inline-block;
-    margin-left: 130px;
+    margin-left: 147px;
     margin-top: 1px;
+}
+
+.title--center {
+    text-align: center;
 }
