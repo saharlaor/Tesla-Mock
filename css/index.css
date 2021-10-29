@@ -137,6 +137,10 @@ button {
     top: 144px;
 }
 
+.showcase {
+    list-style-type: none;
+}
+
 /**************\
 *** Elements ***
 \**************/
@@ -175,6 +179,7 @@ button {
         "Helvetica Neue", Arial, sans-serif;
     font-size: 40px;
 }
+
 .bottom-info__container {
     display: inline-block;
     height: 108px;
@@ -192,6 +197,42 @@ button {
     font-size: 12px;
     text-align: center;
     vertical-align: middle;
+}
+
+.showcase__item {
+    color: #fff;
+    margin: 0px;
+    padding: 1.4px 4.5px 9px 4.5px;
+}
+
+.side-menu__link {
+    width: 14px;
+    margin-top: 9px;
+    margin-left: 2px;
+    padding-left: 7px;
+    padding-right: 11px;
+}
+
+.showcase__item-indicator {
+    width: 100%;
+    padding-bottom: 4.5px;
+    border-left: 1px solid #fff;
+    background-color: #fff;
+    opacity: 0.25;
+}
+
+.showcase__item-label {
+    visibility: hidden;
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.side-menu__link:hover + .showcase__item-label {
+    visibility: visible;
+    transition: all 2s 0.2s;
 }
 
 }
@@ -239,3 +280,75 @@ button {
 .title--center {
     text-align: center;
 }
+
+.info__heading {
+    font-size: 28px;
+}
+
+.info__heading--small {
+    font-size: 24px;
+}
+
+.captions__text {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dial__outer-circle,
+.dial__inner-circle-wrapper,
+.dial__inner-circle,
+.dial__needle {
+    fill: #fff;
+    margin-right: 4px;
+    height: 25px;
+    margin-inline-end: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+}
+
+.dial__outer-circle {
+    width: 41px;
+    right: -5px;
+    top: -3px;
+}
+
+.dial__inner-circle-wrapper {
+    height: 30px;
+    width: 60px;
+    opacity: 0.2;
+    top: -10px;
+    right: 0px;
+}
+
+.dial__needle {
+    width: 4px;
+    transform: rotate(90deg);
+    top: 7px;
+    right: 5px;
+}
+
+.showcase__item-indicator--active {
+    border-left: 3px solid #fff;
+    opacity: 1;
+}
+
+.showcase__item-indicator--active,
+.showcase__item-label--active {
+    visibility: visible;
+}
+
+/* .dial__outer-circle {
+}
+
+.dial__inner-circle-wrapper {
+}
+
+.dial__inner-circle {
+}
+
+.dial__needle {
+} */

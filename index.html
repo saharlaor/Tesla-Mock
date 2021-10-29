@@ -47,6 +47,24 @@
                     <h1 class="title__text">Model 3</h1>
                 </div>
             </header>
+            <aside>
+                <!-- a list with position absolute, li with an invisible a tag
+                    on hover show -->
+                <div class="side-menu">
+                    <ol class="showcase">
+                        <li class="showcase__item">
+                            <a href="/" class="side-menu__link"><span
+                                    class="showcase__item-indicator showcase__item-indicator--active"></span></a>
+                            <span class="showcase__item-label showcase__item-label--active">MODEL 3</span>
+                        </li>
+                        <li class="showcase__item">
+                            <a href="#second-page" class="side-menu__link"><span
+                                    class="showcase__item-indicator"></span></a>
+                            <span class="showcase__item-label">SAFETY</span>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
             <main>
                 <div class="spacer"></div>
                 <div class="clear"></div>
@@ -86,7 +104,7 @@
                         <div class="captions">
                             <p class="captions__text">0-60 mph*</p>
                         </div>
-        </div>
+                    </div>
                     <div class="bottom-info__container">
                         <div class="info">
                             <span class="info__heading">353</span>
@@ -111,6 +129,8 @@
                     </div>
                 </div>
             </main>
+        </div>
+        <div class="page second-page" id="second-page"></div>
     </body>
 
 </html>
