@@ -81,6 +81,11 @@ button {
     vertical-align: top;
 }
 
+.third-page {
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
 .nav {
     position: absolute;
     width: 100%;
@@ -202,6 +207,39 @@ button {
     background-size: cover;
     background-position-x: -202px;
     background-position-y: 22px;
+}
+
+.performance-header,
+.performance-info {
+    display: inline-block;
+}
+
+.performance-header {
+    padding-right: 16px;
+}
+
+.performance-info {
+    width: 624px;
+    padding: 48 0;
+}
+
+.performance-info p {
+    padding-bottom: 16px;
+    color: #393c41;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.performance-banner {
+    height: 693px;
+    width: 100%;
+}
+
+.performance-content {
+    width: 975px;
+    margin: auto;
+    padding: 48px 0;
 }
 
 /**************\
@@ -367,9 +405,14 @@ button {
     vertical-align: top;
 }
 
-.safety__about-container {
+.second-page .about-container {
     position: absolute;
     bottom: 48.5px;
+}
+
+.third-page .about-container {
+    display: block;
+    margin-top: 16px;
 }
 
 .learn-more__plus {
@@ -385,6 +428,10 @@ button {
 
 .learn-more__text {
     display: inline-block;
+}
+
+.performance-header__title {
+    display: block;
 }
 
 /***************\
@@ -565,4 +612,22 @@ button {
     background-color: #000;
     color: #fff;
     transition: 0.33s ease;
+}
+
+.performance-header__title--large {
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+}
+
+.performance-header__title--small {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 17px;
 }
