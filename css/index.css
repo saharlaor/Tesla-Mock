@@ -35,7 +35,8 @@
 a,
 svg,
 button,
-h1 {
+h1,
+h2 {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -146,11 +147,8 @@ button {
     list-style-type: none;
 }
 
-.next-page {
-    height: auto;
-    width: auto;
-    margin: auto;
-    text-align: center;
+.captions {
+    margin-top: 10px;
 }
 
 .arrow {
@@ -160,10 +158,33 @@ button {
     border-radius: 3px;
 }
 
+.next-page {
+    height: auto;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
 .previous-page {
     float: right;
     margin-right: 20px;
     margin-top: 14px;
+}
+
+.safety-info {
+    padding: 0 50px;
+    width: 415px;
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+.safety-info p {
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(57, 60, 65);
 }
 
 /**************\
@@ -212,10 +233,6 @@ button {
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     vertical-align: top;
-}
-
-.captions {
-    margin-top: 10px;
 }
 
 .order-btn__link {
@@ -268,6 +285,20 @@ button {
 
 .previous-page__link {
     padding: 30px;
+}
+
+.safety-info__title {
+    margin-bottom: 14px;
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.safety-info__secondary-title {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
 }
 
 /***************\
