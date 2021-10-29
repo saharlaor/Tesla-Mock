@@ -129,19 +129,13 @@ button {
 }
 
 .order-btn {
+    display: inline-block;
     padding: 2px 30px;
-    border: 3px solid #fff;
     border-radius: 32px;
     font-size: 24px;
     font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
-}
-
-.order-btn:hover {
-    background-color: #fff;
-    color: #000;
-    transition: 0.33s ease;
 }
 
 .side-menu {
@@ -183,6 +177,7 @@ button {
     padding: 48.5px 50px;
     height: 100%;
     width: 415px;
+    position: relative;
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     vertical-align: top;
@@ -369,6 +364,26 @@ button {
     vertical-align: top;
 }
 
+.safety__about-container {
+    position: absolute;
+    bottom: 48.5px;
+}
+
+.learn-more__plus {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    margin-right: 8px;
+    border: 3px solid #000;
+    border-radius: 32px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.learn-more__text {
+    display: inline-block;
+}
+
 /***************\
 *** Modifiers ***
 \***************/
@@ -504,4 +519,24 @@ button {
     font-size: 8px;
     font-weight: 400;
     line-height: 8px;
+}
+
+.order-btn--light {
+    border: 3px solid #fff;
+}
+
+.order-btn--light:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.33s ease;
+}
+
+.order-btn--dark {
+    border: 3px solid #000;
+}
+
+.order-btn--dark:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.33s ease;
 }
