@@ -59,6 +59,7 @@ button {
 .page {
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .first-page {
@@ -140,8 +141,9 @@ button {
 
 .side-menu {
     float: left;
-    position: relative;
-    top: 144px;
+    position: absolute;
+    top: 350px;
+    z-index: 1;
 }
 
 .showcase {
@@ -198,7 +200,8 @@ button {
     background: url(../assets/img/model_3_safety_hero.png) #f5f5f5;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -200px;
+    background-position-x: -202px;
+    background-position-y: 22px;
 }
 
 /**************\
@@ -256,7 +259,6 @@ button {
 }
 
 .showcase__item {
-    color: #fff;
     margin: 0px;
     padding: 1.4px 4.5px 9px 4.5px;
 }
@@ -289,6 +291,7 @@ button {
 .side-menu__link:hover + .showcase__item-label {
     visibility: visible;
     transition: all 2s 0.2s;
+    z-index: 10;
 }
 
 .arrow__link {
@@ -475,9 +478,32 @@ button {
     right: 5px;
 }
 
-.showcase__item-indicator--active {
+.showcase__item--light {
+    color: #fff;
+}
+
+.showcase__item--dark {
+    color: #000;
+}
+
+.showcase__item-indicator--active-light {
     border-left: 3px solid #fff;
     opacity: 1;
+}
+
+.showcase__item-indicator--active-dark {
+    border-left: 3px solid #000;
+    opacity: 1;
+}
+
+.showcase__item-indicator--inactive-light {
+    border-left: 1px solid #fff;
+    opacity: 0.25;
+}
+
+.showcase__item-indicator--inactive-dark {
+    border-left: 1px solid #000;
+    opacity: 0.25;
 }
 
 .showcase__item-indicator--active,
