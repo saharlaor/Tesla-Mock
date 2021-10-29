@@ -61,11 +61,16 @@ button {
 }
 
 .first-page {
+    display: none;
     background-image: url(../assets/img/M3-Hero-LHD-US-D.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 35.5%;
     color: #fff;
+}
+
+.second-page {
+    color: #000;
 }
 
 .nav {
@@ -152,10 +157,13 @@ button {
     display: inline-block;
     width: 18px;
     height: 18px;
-    border-right: 3.7px solid #fff;
-    border-bottom: 3.7px solid #fff;
     border-radius: 3px;
-    transform: rotate(45deg);
+}
+
+.previous-page {
+    float: right;
+    margin-right: 20px;
+    margin-top: 14px;
 }
 
 /**************\
@@ -258,12 +266,13 @@ button {
     width: 21px;
 }
 
+.previous-page__link {
+    padding: 30px;
+}
+
 /***************\
 *** Modifiers ***
 \***************/
-
-.nav--light {
-}
 
 .nav__item--left {
     float: left;
@@ -362,14 +371,22 @@ button {
     visibility: visible;
 }
 
-/* .dial__outer-circle {
+.arrow--up {
+    transform: rotate(225deg);
+    width: 13px;
+    height: 13px;
 }
 
-.dial__inner-circle-wrapper {
+.arrow--down {
+    transform: rotate(45deg);
 }
 
-.dial__inner-circle {
+.arrow--light {
+    border-right: 3.7px solid #fff;
+    border-bottom: 3.7px solid #fff;
 }
 
-.dial__needle {
-} */
+.arrow--dark {
+    border-right: 3.7px solid #000;
+    border-bottom: 3.7px solid #000;
+}
