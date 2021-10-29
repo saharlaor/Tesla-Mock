@@ -92,6 +92,43 @@ button {
     font-weight: 100;
 }
 
+.spacer {
+    padding-top: 570px;
+}
+
+.bottom-info {
+    width: 620px;
+    margin: 22.5px auto 0 auto;
+    text-align: center;
+}
+
+.info {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.dial {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.order-btn {
+    padding: 2px 30px;
+    border: 3px solid #fff;
+    border-radius: 32px;
+    font-size: 24px;
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.order-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.33s ease;
 }
 
 .side-menu {
@@ -138,6 +175,25 @@ button {
         "Helvetica Neue", Arial, sans-serif;
     font-size: 40px;
 }
+.bottom-info__container {
+    display: inline-block;
+    height: 108px;
+    padding: 0 18px;
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    vertical-align: top;
+}
+
+.captions {
+    margin-top: 10px;
+}
+
+.order-btn__link {
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 }
 
 /***************\
