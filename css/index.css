@@ -141,6 +141,23 @@ button {
     list-style-type: none;
 }
 
+.next-page {
+    height: auto;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-right: 3.7px solid #fff;
+    border-bottom: 3.7px solid #fff;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
 /**************\
 *** Elements ***
 \**************/
@@ -235,6 +252,10 @@ button {
     transition: all 2s 0.2s;
 }
 
+.arrow__link {
+    display: inline-block;
+    height: 21px;
+    width: 21px;
 }
 
 /***************\
