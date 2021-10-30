@@ -264,6 +264,19 @@ main .page {
     padding: 48px 0;
 }
 
+.chat-btn {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 27px;
+    /* border: 1px solid #bbb; */
+    box-shadow: 0 0.5px 3px #333;
+    position: fixed;
+    bottom: 80px;
+    right: 34px;
+    background: #fff;
+}
+
 /**************\
 *** Elements ***
 \**************/
@@ -527,6 +540,17 @@ main .page {
     padding: 0 18px;
     width: 994px;
     text-align: center;
+}
+
+.chat-btn__icon {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.chat-btn__icon svg {
+    position: relative;
+    top: 16px;
 }
 
 /***************\
