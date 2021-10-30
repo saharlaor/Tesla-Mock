@@ -58,6 +58,10 @@ button {
     border: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /************\
 *** Blocks ***
 \************/
@@ -73,7 +77,7 @@ main .page {
 }
 
 .first-page {
-    /* display: none; */
+    display: none;
     background-image: url(../assets/img/M3-Hero-LHD-US-D.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,6 +96,11 @@ main .page {
 }
 
 .third-page {
+    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+.fourth-page {
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
 }
@@ -129,6 +138,10 @@ main .page {
     padding-top: 550px;
 }
 
+.fourth-page .spacer {
+    padding-top: 540px;
+}
+
 .bottom-info {
     width: 620px;
     margin: 22.5px auto 0 auto;
@@ -152,9 +165,24 @@ main .page {
     position: relative;
 }
 
+.learn-more {
+    padding: 1px;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+}
+
+.learn-more:hover .learn-more__plus {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
 .order-btn {
     display: inline-block;
-    padding: 2px 30px;
+    height: 40px;
+    margin-left: 4px;
     border-radius: 32px;
     font-size: 24px;
     font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
@@ -223,8 +251,8 @@ main .page {
     background: url(../assets/img/model_3_safety_hero.png) #f5f5f5;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -202px;
-    background-position-y: 22px;
+    background-position-x: -5px;
+    background-position-y: 0.5px;
 }
 
 .performance-header,
@@ -264,6 +292,47 @@ main .page {
     padding: 48px 0;
 }
 
+.all-wheel-banner {
+    height: 693px;
+    width: 100%;
+    background-image: url(../assets/img/all_wheel_drive.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -253px;
+    color: #fff;
+}
+
+.all-wheel-header,
+.all-wheel-info {
+    display: inline-block;
+}
+
+.all-wheel-header {
+    width: 345px;
+    padding-right: 31px;
+}
+
+.all-wheel-info {
+    width: 624px;
+    padding: 48 0;
+}
+
+.all-wheel-info p {
+    display: inline-block;
+    padding-bottom: 16px;
+    vertical-align: text-bottom;
+    color: #393c41;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.all-wheel-content {
+    width: 975px;
+    margin: auto;
+    padding: 48px 0;
+}
+
 .chat-btn {
     display: inline-block;
     width: 52px;
@@ -291,7 +360,7 @@ main .page {
 }
 
 .logo-link__svg {
-    margin: 3px 0 0 5px;
+    margin: 3px 0 0 2px;
     height: 12.3px;
 }
 
@@ -342,6 +411,7 @@ main .page {
         "Helvetica Neue", Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
+    line-height: 18px;
 }
 
 .dial__outer-circle,
@@ -392,6 +462,7 @@ main .page {
 }
 
 .order-btn__link {
+    padding: 2px 24px;
     font-size: 12px;
     text-align: center;
     vertical-align: middle;
@@ -399,7 +470,7 @@ main .page {
 
 .showcase__item {
     margin: 0px;
-    padding: 1.4px 4.5px 9px 4.5px;
+    padding: 1.4px 4.5px 7.5px 4.5px;
 }
 
 .side-menu__link {
@@ -413,7 +484,7 @@ main .page {
 .showcase__item-indicator {
     width: 100%;
     padding-bottom: 4.5px;
-    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     background-color: #fff;
     opacity: 0.25;
 }
@@ -487,7 +558,7 @@ main .page {
 .safety-rating__item {
     line-height: 21px;
     vertical-align: top;
-    margin-bottom: 7.5px;
+    margin-bottom: 8px;
 }
 
 .rating__text {
@@ -506,9 +577,13 @@ main .page {
     vertical-align: top;
 }
 
+.rating__stars span {
+    letter-spacing: 0.72px;
+}
+
 .second-page .about-container {
     position: absolute;
-    bottom: 48.5px;
+    bottom: 46.5px;
 }
 
 .third-page .about-container {
@@ -516,19 +591,30 @@ main .page {
     margin-top: 16px;
 }
 
+.fourth-page .about-container {
+    display: block;
+    margin-top: 16px;
+}
+
 .learn-more__plus {
     display: inline-block;
-    width: 37px;
-    height: 37px;
-    margin-right: 8px;
+    width: 40px;
+    height: 40px;
     border: 3px solid #000;
     border-radius: 32px;
     font-size: 24px;
     font-weight: 100;
 }
 
+.learn-more__plus span {
+    vertical-align: middle;
+}
+
 .learn-more__text {
     display: inline-block;
+    font-size: 12px;
+    margin: 1px 0px 0 3px;
+    vertical-align: text-top;
 }
 
 .performance-header__title {
@@ -536,6 +622,17 @@ main .page {
 }
 
 .performance-banner__statistics {
+    margin: auto;
+    padding: 0 18px;
+    width: 994px;
+    text-align: center;
+}
+
+.all-wheel-header__title {
+    display: block;
+}
+
+.all-wheel-banner__statistics {
     margin: auto;
     padding: 0 18px;
     width: 994px;
@@ -689,6 +786,45 @@ main .page {
 }
 
 .performance-header__title--small {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 17px;
+}
+
+.all-wheel__weather-icon {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.all-wheel-banner__statistics .bottom-info__container:nth-child(3) .info {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.all-wheel-banner__statistics .bottom-info__container:nth-child(3) .captions {
+    margin: 0;
+}
+
+.all-wheel__weather-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.all-wheel-header__title--large {
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+}
+
+.all-wheel-header__title--small {
     font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     font-size: 17px;
