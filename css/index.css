@@ -32,11 +32,17 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
 a,
 svg,
 button,
 h1,
-h2 {
+h2,
+p {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -55,6 +61,10 @@ button {
 /************\
 *** Blocks ***
 \************/
+
+main .page {
+    scroll-snap-align: start;
+}
 
 .page {
     height: 100vh;
@@ -111,8 +121,12 @@ button {
     font-weight: 100;
 }
 
-.spacer {
+.first-page .spacer {
     padding-top: 570px;
+}
+
+.third-page .spacer {
+    padding-top: 550px;
 }
 
 .bottom-info {
@@ -126,6 +140,10 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+}
+
+.speedometer {
+    letter-spacing: 4px;
 }
 
 .dial {
@@ -215,7 +233,7 @@ button {
 }
 
 .performance-header {
-    padding-right: 16px;
+    padding-right: 31px;
 }
 
 .performance-info {
@@ -234,6 +252,10 @@ button {
 .performance-banner {
     height: 693px;
     width: 100%;
+    background-image: url(../assets/img/model3_performance.jpeg);
+    background-repeat: no-repeat;
+    background-position-y: -193px;
+    color: #fff;
 }
 
 .performance-content {
@@ -288,6 +310,72 @@ button {
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     vertical-align: top;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.info__heading {
+    font-size: 28px;
+}
+
+.info__heading--small {
+    font-size: 24px;
+}
+
+.captions__text {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dial__outer-circle,
+.dial__inner-circle-wrapper,
+.dial__inner-circle,
+.dial__needle {
+    fill: #fff;
+    margin-right: 4px;
+    height: 25px;
+    margin-inline-end: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+}
+
+.dial__outer-circle {
+    width: 41px;
+    right: 6px;
+    top: -6px;
+}
+
+.third-page .dial__outer-circle {
+    left: 46px;
+}
+
+.dial__inner-circle-wrapper {
+    height: 30px;
+    width: 60px;
+    opacity: 0.2;
+    top: -13px;
+    right: 11px;
+}
+
+.third-page .dial__inner-circle-wrapper {
+    left: 22px;
+}
+
+.dial__needle {
+    width: 4px;
+    transform: rotate(90deg);
+    top: 5px;
+    right: 16px;
+}
+
+.third-page .dial__needle {
+    left: 73px;
 }
 
 .order-btn__link {
@@ -434,6 +522,13 @@ button {
     display: block;
 }
 
+.performance-banner__statistics {
+    margin: auto;
+    padding: 0 18px;
+    width: 994px;
+    text-align: center;
+}
+
 /***************\
 *** Modifiers ***
 \***************/
@@ -469,60 +564,6 @@ button {
     display: inline-block;
     margin-left: 132px;
     margin-top: 1px;
-}
-
-.title--center {
-    text-align: center;
-}
-
-.info__heading {
-    font-size: 28px;
-}
-
-.info__heading--small {
-    font-size: 24px;
-}
-
-.captions__text {
-    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.dial__outer-circle,
-.dial__inner-circle-wrapper,
-.dial__inner-circle,
-.dial__needle {
-    fill: #fff;
-    margin-right: 4px;
-    height: 25px;
-    margin-inline-end: 4px;
-    overflow: hidden;
-    position: absolute;
-    top: 10px;
-    width: 30px;
-}
-
-.dial__outer-circle {
-    width: 41px;
-    right: -5px;
-    top: -3px;
-}
-
-.dial__inner-circle-wrapper {
-    height: 30px;
-    width: 60px;
-    opacity: 0.2;
-    top: -10px;
-    right: 0px;
-}
-
-.dial__needle {
-    width: 4px;
-    transform: rotate(90deg);
-    top: 7px;
-    right: 5px;
 }
 
 .showcase__item--light {
