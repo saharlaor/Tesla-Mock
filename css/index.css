@@ -99,17 +99,10 @@ main .page {
     vertical-align: top;
 }
 
-.third-page {
-    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-}
-
-.fourth-page {
-    font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-}
-
-.fifth-page {
+.third-page,
+.fourth-page,
+.fifth-page,
+.sixth-page {
     font-family: "Gotham SSm", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
 }
@@ -266,8 +259,11 @@ main .page {
 }
 
 .performance-header,
-.performance-info {
+.performance-info,
+.autopilot-header,
+.autopilot-info {
     display: inline-block;
+    vertical-align: top;
 }
 
 .performance-header {
@@ -374,6 +370,45 @@ main .page {
     line-height: 21px;
     color: #393c41;
     margin-bottom: 16px;
+}
+
+.autopilot-header {
+    padding-right: 58.5px;
+}
+
+.autopilot-info {
+    width: 624px;
+}
+
+.autopilot-info p {
+    padding-bottom: 16px;
+    color: #393c41;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.autopilot-banner {
+    position: relative;
+    height: 693px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -193px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.autopilot-banner video {
+    position: absolute;
+    width: 100%;
+    transform: translateY(calc((560px - 100vh) / 2));
+    z-index: -100;
+}
+
+.autopilot-content {
+    width: 975px;
+    margin: auto;
+    padding: 49px 0;
 }
 
 .chat-btn {
@@ -721,6 +756,43 @@ main .page {
     background-size: cover;
 }
 
+.autopilot-header__title {
+    display: block;
+}
+
+.autopilot-banner__statistics {
+    display: block;
+    padding: 107px 150px;
+}
+
+.autopilot-banner__statistics-item {
+    display: block;
+    height: 160px;
+    width: 270px;
+    padding: 40px 0;
+    /* padding: 139px 150px; */
+}
+
+.autopilot-banner__statistics-header {
+    color: #181b21;
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    height: 45px;
+}
+
+.autopilot-banner__statistics-header img {
+    height: 40px;
+    width: 41px;
+}
+
+.autopilot-banner__statistics-content {
+    color: #656870;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 680px;
+}
+
 .chat-btn__icon {
     position: relative;
     height: 100%;
@@ -907,6 +979,45 @@ main .page {
 }
 
 .all-wheel-header__title--small {
+    font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 17px;
+}
+
+.autopilot-banner__statistics-header--large {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+}
+
+.autopilot-banner__statistics-header--small {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    line-height: 28px;
+}
+
+.autopilot-banner__statistics-header--smaller {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 21px;
+}
+
+.autopilot-header__title--large {
+    margin-bottom: 14px;
+    font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+}
+
+.autopilot-header__title--small {
     font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
     font-size: 17px;
